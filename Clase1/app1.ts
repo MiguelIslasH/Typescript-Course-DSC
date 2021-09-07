@@ -2,12 +2,12 @@ function add(number1: number, number2: number): number {
   return number1 + number2;
 }
 
-function myFunc(index: number, skills: string[]) {
+function myFunc(index: number, skills: string[]): string {
   if (index < 0) {
     return "Index must be greater than 0";
   }
 
-  if (index > skills.lenght) {
+  if (index > skills.length) {
     return -1;
   }
 
@@ -28,7 +28,6 @@ interface Auto {
 let myAuto: Auto;
 fetch("www.autos.com").then((auto) => {
   const responseAuto = auto.body as unknown as Auto;
-
   if (responseAuto.size > 230) {
     responseAuto.type = "Van";
   }

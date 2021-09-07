@@ -3,8 +3,8 @@
 //Código más entendible
 //Experiencia de desarrollador
 
-function add(number1, number2) {
-  return number1 + number2;
+function myFunc2(a, b) {
+  return a + b;
 }
 
 function myFunc(index, skills) {
@@ -15,19 +15,23 @@ function myFunc(index, skills) {
   if (index > skills.lenght) {
     return -1;
   }
+
   if (skills[index] === true) {
     skills[index] = false;
   }
   return skills[index];
 }
 
+let contenido = myFunc(1, [false, "Flutter"]);
+
 let myAuto;
 fetch("www.autos.com").then((auto) => {
   if (auto.size > 230) {
-    auto.type = "Van";
+    // undefined > 230
+    auto.type = "Van"; // error
   }
 
-  myAuto = auto;
+  myAuto = auto; //
 });
 
-myAuto.wheels();
+myAuto.wheels(); // myAuto no tenga wheels()
