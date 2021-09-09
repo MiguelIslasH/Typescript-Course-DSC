@@ -3,16 +3,10 @@ const myFunction = () => {
   console.log("My funcion");
 };
 
-function anyFunction(tipoAny) {
+function anyFunction(tipoAny: number) {
   console.log(tipoAny);
 }
 
-let nulo = null;
-nulo.rotar();
-
 function unreachableCode() {
   return "Ultimo return";
-
-  let myVariable = "Hola";
-  console.log(myVariable);
 }

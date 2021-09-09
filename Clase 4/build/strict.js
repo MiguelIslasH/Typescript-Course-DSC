@@ -1,8 +1,8 @@
-//"use strict";
+"use strict";
 x = 10;
 console.log(x);
 
-function funcion(parametro, parametro) {
+function funcion(parametro2, parametro) {
   console.log(parametro);
 }
 
