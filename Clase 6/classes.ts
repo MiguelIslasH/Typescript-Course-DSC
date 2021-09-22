@@ -14,6 +14,7 @@
 //super
 //Implementación de interfaces
 
+/*
 type TipoGasolina = "Premium" | "Magna";
 const valor = 10;
 
@@ -100,3 +101,4 @@ auto.apagar();
 auto.placas = "AEA";
 auto.gasolina;
 auto.avanzar();
+*/
